@@ -1,4 +1,8 @@
 package com.atividade.demo.repositories;
 
-public class ProdutoRepository {
+import com.atividade.demo.models.ProdutoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long> {
+
 }
